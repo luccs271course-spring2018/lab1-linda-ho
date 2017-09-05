@@ -26,7 +26,7 @@ public class FizzBuzz {
             }
             return printList;
         } else {
-            System.out.println("Negative numbers are not accepted.");
+            System.out.println("Negative numbers are not accepted");
             return null;
         }
     }
