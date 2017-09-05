@@ -4,11 +4,10 @@ public class FizzBuzz {
 
 
     /**
-     * This refactored method prints stores the resulting number or Fizz, Buzz, Fizz Buzz into an array.
+     * This refactored method prints stores resulting Fizz Buzz data in a string array.
      * @param  int  number chosen by a user that determines how many lines to print to the screen.
      * @return String[] returns an array of the resulting data
      */
-
 
     public static String[] fizzBuzz(int n) {
         String[] printList = new String[n];
@@ -21,38 +20,36 @@ public class FizzBuzz {
             } else if (i % 5 == 0) {
                 printList[i-1] = "Buzz";
             } else {
-                printList[i-1] = i;
+                printList[i-1] = String.valueOf(i);
             }
         }
         return printList;
     }
 
 
-    /**
-     * This method prints to the screen numbers starting from one up to the given input choice.
-     * It replaces numbers divisible by 3 with the word 'Fizz'.
-     * It replaces numbers divisible by 5 with the word 'Buzz'.
-     * It replaces numbers divisible by 3 and 5 with the word 'Fizz Buzz'
-     * @param  int  number chosen by a user that determines how many lines to print to the screen.
-     */
+//    /**
+//     * This method prints to the screen numbers starting from one up to the given input choice.
+//     * It replaces numbers divisible by 3 with the word 'Fizz'.
+//     * It replaces numbers divisible by 5 with the word 'Buzz'.
+//     * It replaces numbers divisible by 3 and 5 with the word 'Fizz Buzz'
+//     * @param  int  number chosen by a user that determines how many lines to print to the screen.
+//     */
 
-    //    public static void printResult(int numChoice) {
-    //
-    //        for(int i = 1; i <= numChoice; i++) {
-    //            if (i % 3 == 0 && i % 5 == 0) {
-    //                System.out.println("Fizz Buzz");
-    //            } else if (i % 3 == 0) {
-    //                System.out.println("Fizz");
-    //            } else if (i % 5 == 0) {
-    //                System.out.println("Buzz");
-    //            } else {
-    //                System.out.println(i);
-    //            }
-    //        }
-    //    }
+//    public static void printResult(int numChoice) {
+//
+//        for(int i = 1; i <= numChoice; i++) {
+//            if (i % 3 == 0 && i % 5 == 0) {
+//                System.out.println("Fizz Buzz");
+//            } else if (i % 3 == 0) {
+//                System.out.println("Fizz");
+//            } else if (i % 5 == 0) {
+//                System.out.println("Buzz");
+//            } else {
+//                System.out.println(i);
+//            }
+//        }
+//    }
 }
-
-
 
 
 /*
