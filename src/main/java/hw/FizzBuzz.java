@@ -2,6 +2,32 @@ package hw;
 
 public class FizzBuzz {
 
+
+    /**
+     * This refactored method prints stores the resulting number or Fizz, Buzz, Fizz Buzz into an array.
+     * @param  int  number chosen by a user that determines how many lines to print to the screen.
+     * @return String[] returns an array of the resulting data
+     */
+
+
+    public static String[] fizzBuzz(int n) {
+        String[] printList = new String[n];
+
+        for(int i = 1; i <= n; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                printList[i-1] = "Fizz Buzz";
+            } else if (i % 3 == 0) {
+                printList[i-1] = "Fizz";
+            } else if (i % 5 == 0) {
+                printList[i-1] = "Buzz";
+            } else {
+                printList[i-1] = i;
+            }
+        }
+        return printList;
+    }
+
+
     /**
      * This method prints to the screen numbers starting from one up to the given input choice.
      * It replaces numbers divisible by 3 with the word 'Fizz'.
@@ -10,21 +36,23 @@ public class FizzBuzz {
      * @param  int  number chosen by a user that determines how many lines to print to the screen.
      */
 
-    public static void printResult(int numChoice) {
-
-        for(int i = 1; i <= numChoice; i++) {
-            if (i % 3 == 0 && i % 5 == 0) {
-                System.out.println("Fizz Buzz");
-            } else if (i % 3 == 0) {
-                System.out.println("Fizz");
-            } else if (i % 5 == 0) {
-                System.out.println("Buzz");
-            } else {
-                System.out.println(i);
-            }
-        }
-    }
+    //    public static void printResult(int numChoice) {
+    //
+    //        for(int i = 1; i <= numChoice; i++) {
+    //            if (i % 3 == 0 && i % 5 == 0) {
+    //                System.out.println("Fizz Buzz");
+    //            } else if (i % 3 == 0) {
+    //                System.out.println("Fizz");
+    //            } else if (i % 5 == 0) {
+    //                System.out.println("Buzz");
+    //            } else {
+    //                System.out.println(i);
+    //            }
+    //        }
+    //    }
 }
+
+
 
 
 /*

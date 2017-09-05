@@ -14,6 +14,6 @@ public class Main {
              System.exit(1);
          }
 
-         FizzBuzz.printResult(num);
+         FizzBuzz.fizzBuzz(num);
     }
 }
