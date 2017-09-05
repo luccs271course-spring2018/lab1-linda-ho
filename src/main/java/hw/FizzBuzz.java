@@ -10,20 +10,25 @@ public class FizzBuzz {
      */
 
     public static String[] fizzBuzz(int n) {
-        String[] printList = new String[n];
+        if (n >= 0) {
+            String[] printList = new String[n];
 
-        for(int i = 1; i <= n; i++) {
-            if (i % 3 == 0 && i % 5 == 0) {
-                printList[i-1] = "Fizz Buzz";
-            } else if (i % 3 == 0) {
-                printList[i-1] = "Fizz";
-            } else if (i % 5 == 0) {
-                printList[i-1] = "Buzz";
-            } else {
-                printList[i-1] = String.valueOf(i);
+            for(int i = 1; i <= n; i++) {
+                if (i % 3 == 0 && i % 5 == 0) {
+                    printList[i-1] = "Fizz Buzz";
+                } else if (i % 3 == 0) {
+                    printList[i-1] = "Fizz";
+                } else if (i % 5 == 0) {
+                    printList[i-1] = "Buzz";
+                } else {
+                    printList[i-1] = String.valueOf(i);
+                }
             }
+            return printList;
+        } else {
+            System.out.println("Negative numbers are not accepted.");
+            return null;
         }
-        return printList;
     }
 
 

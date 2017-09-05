@@ -13,11 +13,6 @@ public class Main {
              System.exit(1);
         }
 
-        if (num >= 0) {
-            FizzBuzz.fizzBuzz(num);
-        } else {
-            System.out.println("Negative numbers are not accepted.");
-            System.exit(1);
-        }
+        FizzBuzz.fizzBuzz(num);
     }
 }
