@@ -2,7 +2,6 @@ package hw;
 
 public class FizzBuzz {
 
-
     /**
      * This refactored method prints stores resulting Fizz Buzz data in a string array.
      * @param  int  number chosen by a user that determines how many lines to print to the screen.
