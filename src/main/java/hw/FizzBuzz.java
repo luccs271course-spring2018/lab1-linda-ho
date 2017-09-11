@@ -27,7 +27,6 @@ public static List<String> fizzBuzz(int n) {
         }
         return printList;
     } else {
-        System.out.println("Negative numbers are not accepted");
         return null;
     }
 }
