@@ -1,5 +1,17 @@
 # Lab 1: Fizz Buzz
 
+## Running the Application
+
+```
+./gradlew run -PappArgs="['17']"
+```
+
+## Running the Tests
+
+```
+./gradlew test
+```
+
 ## Overview
 You will work in pairs on various versions of fizz buzz.
 ## Objectives
